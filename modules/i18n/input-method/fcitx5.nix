@@ -222,7 +222,10 @@ in
           optionalFile =
             p: f: v:
             lib.optionalAttrs (v != { }) {
-              "fcitx5/${p}".source = f "fcitx5-${builtins.replaceStrings [ "/" ] [ "-" ] p}" v;
+              "fcitx5/${p}" = {
+                recursive = true;
+                source = f "fcitx5-${builtins.replaceStrings [ "/" ] [ "-" ] p}" v;
+              };
             };
         in
         lib.attrsets.mergeAttrsList [
@@ -237,7 +240,12 @@ in
         let
           nullableFile =
             n: maybeNull: source:
-            lib.nameValuePair "fcitx5/themes/${name}/${n}" (lib.mkIf (maybeNull != null) { inherit source; });
+            lib.nameValuePair "fcitx5/themes/${name}/${n}" (
+              lib.mkIf (maybeNull != null) {
+                inherit source;
+                recursive = true;
+              }
+            );
           simpleFile = n: v: nullableFile n v v;
         in
         builtins.listToAttrs [
