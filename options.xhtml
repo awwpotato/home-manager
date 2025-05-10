@@ -21537,6 +21537,34 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.distrobox.enableSystemdUnit"></a><a class="term" href="options.xhtml#opt-programs.distrobox.enableSystemdUnit"><code class="option">programs.distrobox.enableSystemdUnit</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whatever to enable a Systemd Unit that automatically rebuilds your
+containers when changes are detected.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/distrobox.nix" target="_top">
+&lt;home-manager/modules/programs/distrobox.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.distrobox.package"></a><a class="term" href="options.xhtml#opt-programs.distrobox.package"><code class="option">programs.distrobox.package</code>
   </a>
  </span>
@@ -28310,6 +28338,58 @@ attribute set of string</p>
   weekly = &quot;Mon 0:53:00&quot;;
 }
 </code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git.nix" target="_top">
+&lt;home-manager/modules/programs/git.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.git.patdiff.enable"></a><a class="term" href="options.xhtml#opt-programs.git.patdiff.enable"><code class="option">programs.git.patdiff.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable the <span class="command"><strong>patdiff</strong></span> differ.
+See <a class="link" href="https://opensource.janestreet.com/patdiff/"  target="_top">https://opensource.janestreet.com/patdiff/</a></p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git.nix" target="_top">
+&lt;home-manager/modules/programs/git.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.git.patdiff.package"></a><a class="term" href="options.xhtml#opt-programs.git.patdiff.package"><code class="option">programs.git.patdiff.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The patdiff package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.patdiff</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -39840,6 +39920,331 @@ YAML value</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.lutris.enable"></a><a class="term" href="options.xhtml#opt-programs.lutris.enable"><code class="option">programs.lutris.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable lutris…</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.package"></a><a class="term" href="options.xhtml#opt-programs.lutris.package"><code class="option">programs.lutris.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The lutris package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&lt;derivation lutris-0.5.19&gt;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.extraPackages"></a><a class="term" href="options.xhtml#opt-programs.lutris.extraPackages"><code class="option">programs.lutris.extraPackages</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>List of packages to pass as extraPkgs to lutris.
+Please note runners are not detected properly this way, use a proper option for those.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">&quot;with pkgs; [mangohud winetricks gamescope gamemode umu-launcher]&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.protonPackages"></a><a class="term" href="options.xhtml#opt-programs.lutris.protonPackages"><code class="option">programs.lutris.protonPackages</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>List of proton packages to be added for lutris to use with umu-launcher.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">&quot;[ pkgs.proton-ge-bin ]&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.runners"></a><a class="term" href="options.xhtml#opt-programs.lutris.runners"><code class="option">programs.lutris.runners</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Attribute set of Lutris runners along with their configurations.
+Each runner must be named exactly as lutris expects on <code class="literal">lutris --list-runners</code>.
+Note that runners added here won’t be configurable through Lutris using the GUI.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of (submodule)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">&#x27;&#x27;
+  runners = {
+    cemu.package = pkgs.cemu;
+    pcsx2.config = {
+      system.disable_screen_saver = true;
+      runner.runner_executable = &quot;$\{pkgs.pcsx2}/bin/pcsx2-qt&quot;;
+    };
+  };
+&#x27;&#x27;
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.runners._name_.package"></a><a class="term" href="options.xhtml#opt-programs.lutris.runners._name_.package"><code class="option">programs.lutris.runners.&lt;name&gt;.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The package to use for this runner, nix will try to find the executable for this package.
+A more specific path can be set by using settings.runner.runner_executable instead.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">&quot;pkgs.cemu&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.runners._name_.settings"></a><a class="term" href="options.xhtml#opt-programs.lutris.runners._name_.settings"><code class="option">programs.lutris.runners.&lt;name&gt;.settings</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Settings passed directly to lutris for this runner’s config at XDG_CONFIG/lutris/runners.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+submodule</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.runners._name_.settings.runner"></a><a class="term" href="options.xhtml#opt-programs.lutris.runners._name_.settings.runner"><code class="option">programs.lutris.runners.&lt;name&gt;.settings.runner</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Runner specific options.
+For references, you must look for the file of said runner on lutris’ source code.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+YAML value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.runners._name_.settings.runner.runner_executable"></a><a class="term" href="options.xhtml#opt-programs.lutris.runners._name_.settings.runner.runner_executable"><code class="option">programs.lutris.runners.&lt;name&gt;.settings.runner.runner_executable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Specific option to point to a runner executable directly, don’t set runner.package if you set this.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string or absolute path</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.runners._name_.settings.system"></a><a class="term" href="options.xhtml#opt-programs.lutris.runners._name_.settings.system"><code class="option">programs.lutris.runners.&lt;name&gt;.settings.system</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Lutris system options for this runner.
+Reference for system options:
+https://github.com/lutris/lutris/blob/master/lutris/sysoptions.py#L78</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+YAML value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.steamPackage"></a><a class="term" href="options.xhtml#opt-programs.lutris.steamPackage"><code class="option">programs.lutris.steamPackage</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>This must be the same you use for your system, or two instances will conflict,
+for example, if you configure steam through the nixos module, a good value is “osConfig.programs.steam.package”</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">&quot;pkgs.steam or osConfig.programs.steam.package&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lutris.winePackages"></a><a class="term" href="options.xhtml#opt-programs.lutris.winePackages"><code class="option">programs.lutris.winePackages</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>List of wine packages to be added for lutris to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">&quot;[ pkgs.wineWow64Packages.full ]&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lutris.nix" target="_top">
+&lt;home-manager/modules/programs/lutris.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.man.enable"></a><a class="term" href="options.xhtml#opt-programs.man.enable"><code class="option">programs.man.enable</code>
   </a>
  </span>
@@ -43393,6 +43798,9 @@ For any option not found will need to be done in your neovim’s config instead.
 <p><span class="emphasis"><em>Type:</em></span>
 TOML value</p>
 
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
   fork = false;
   frame = &quot;full&quot;;
@@ -46930,7 +47338,7 @@ null or package</p>
 GUI and observing the changes in ~/.config/onlyoffice/DesktopEditors.conf.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-attribute set of (boolean or string)</p>
+attribute set of (atom (null, bool, int, float or string))</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">{ }</code></p>
@@ -51796,7 +52204,6 @@ null or boolean</p>
 <code class="literal">{ }</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
-  modi = &quot;drun,emoji,ssh&quot;;
   kb-primary-paste = &quot;Control+V,Shift+Insert&quot;;
   kb-secondary-paste = &quot;Control+v,Insert&quot;;
 }
@@ -51874,6 +52281,42 @@ one of “bottom”, “bottom-left”, “bottom-right”, “center”, “lef
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;center&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/rofi.nix" target="_top">
+&lt;home-manager/modules/programs/rofi.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.rofi.modes"></a><a class="term" href="options.xhtml#opt-programs.rofi.modes"><code class="option">programs.rofi.modes</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Modes to enable. For custom modes see <code class="literal">man 5 rofi-script</code>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of (string or (submodule))</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;drun&quot;
+  &quot;emoji&quot;
+  &quot;ssh&quot;
+  {
+    name = &quot;whatnot&quot;;
+    path = lib.getExe pkgs.rofi-whatnot;
+  }
+]
+
+</code></pre>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -58153,6 +58596,87 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.television.enableBashIntegration"></a><a class="term" href="options.xhtml#opt-programs.television.enableBashIntegration"><code class="option">programs.television.enableBashIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Bash integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/television.nix" target="_top">
+&lt;home-manager/modules/programs/television.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.television.enableFishIntegration"></a><a class="term" href="options.xhtml#opt-programs.television.enableFishIntegration"><code class="option">programs.television.enableFishIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Fish integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/television.nix" target="_top">
+&lt;home-manager/modules/programs/television.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.television.enableZshIntegration"></a><a class="term" href="options.xhtml#opt-programs.television.enableZshIntegration"><code class="option">programs.television.enableZshIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Zsh integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/television.nix" target="_top">
+&lt;home-manager/modules/programs/television.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.television.package"></a><a class="term" href="options.xhtml#opt-programs.television.package"><code class="option">programs.television.package</code>
   </a>
  </span>
@@ -64168,6 +64692,193 @@ attribute set of section of an INI file (attrs of INI atom (null, bool, int, flo
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.waveterm.enable"></a><a class="term" href="options.xhtml#opt-programs.waveterm.enable"><code class="option">programs.waveterm.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable waveterm.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/waveterm.nix" target="_top">
+&lt;home-manager/modules/programs/waveterm.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.waveterm.package"></a><a class="term" href="options.xhtml#opt-programs.waveterm.package"><code class="option">programs.waveterm.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The waveterm package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.waveterm</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/waveterm.nix" target="_top">
+&lt;home-manager/modules/programs/waveterm.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.waveterm.bookmarks"></a><a class="term" href="options.xhtml#opt-programs.waveterm.bookmarks"><code class="option">programs.waveterm.bookmarks</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Bookmark definitions for WaveTerm. Details about the format and the options
+can be found here: <a class="link" href="https://docs.waveterm.dev/config#webbookmarks-configuration"  target="_top">https://docs.waveterm.dev/config#webbookmarks-configuration</a>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+JSON value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  &quot;bookmark@claude&quot; = {
+    title = &quot;Claude&quot;;
+    url = &quot;https://claude.ai&quot;;
+  };
+  &quot;bookmark@github&quot; = {
+    title = &quot;GitHub&quot;;
+    url = &quot;https://github.com&quot;;
+  };
+  &quot;bookmark@google&quot; = {
+    title = &quot;Google&quot;;
+    url = &quot;https://www.google.com&quot;;
+  };
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/waveterm.nix" target="_top">
+&lt;home-manager/modules/programs/waveterm.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.waveterm.settings"></a><a class="term" href="options.xhtml#opt-programs.waveterm.settings"><code class="option">programs.waveterm.settings</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Configuration settings for WaveTerm. All available options can be
+found here: <a class="link" href="https://docs.waveterm.dev/config#configuration-keys"  target="_top">https://docs.waveterm.dev/config#configuration-keys</a>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+JSON value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  &quot;app:dismissarchitecturewarning&quot; = false;
+  &quot;autoupdate:enabled&quot; = false;
+  &quot;term:fontfamily&quot; = &quot;JuliaMono&quot;;
+  &quot;term:fontsize&quot; = 12.0;
+  &quot;term:theme&quot; = &quot;my-custom-theme&quot;;
+  &quot;term:transparency&quot; = 0.5;
+  &quot;window:bgcolor&quot; = &quot;#000000&quot;;
+  &quot;window:blur&quot; = true;
+  &quot;window:opacity&quot; = 0.5;
+  &quot;window:reducedmotion&quot; = true;
+  &quot;window:showhelp&quot; = false;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/waveterm.nix" target="_top">
+&lt;home-manager/modules/programs/waveterm.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.waveterm.themes"></a><a class="term" href="options.xhtml#opt-programs.waveterm.themes"><code class="option">programs.waveterm.themes</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>User defined terminal themes. All the details about available options and
+format can be found here: <a class="link" href="https://docs.waveterm.dev/config#terminal-theming"  target="_top">https://docs.waveterm.dev/config#terminal-theming</a>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+JSON value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  default-dark = {
+    background = &quot;#00000077&quot;;
+    black = &quot;#757575&quot;;
+    blue = &quot;#85aacb&quot;;
+    brightBlack = &quot;#727272&quot;;
+    brightBlue = &quot;#9ab6cb&quot;;
+    brightCyan = &quot;#b7b8cb&quot;;
+    brightGreen = &quot;#a3dd97&quot;;
+    brightMagenta = &quot;#cc8ecb&quot;;
+    brightRed = &quot;#cc9d97&quot;;
+    brightWhite = &quot;#f0f0f0&quot;;
+    brightYellow = &quot;#cbcaaa&quot;;
+    cmdtext = &quot;#f0f0f0&quot;;
+    cursorAccent = &quot;&quot;;
+    cyan = &quot;#74a7cb&quot;;
+    &quot;display:name&quot; = &quot;Default Dark&quot;;
+    &quot;display:order&quot; = 1;
+    foreground = &quot;#c1c1c1&quot;;
+    gray = &quot;#8b918a&quot;;
+    green = &quot;#76c266&quot;;
+    magenta = &quot;#cc72ca&quot;;
+    red = &quot;#cc685c&quot;;
+    selectionBackground = &quot;&quot;;
+    white = &quot;#c1c1c1&quot;;
+    yellow = &quot;#cbca9b&quot;;
+  };
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/waveterm.nix" target="_top">
+&lt;home-manager/modules/programs/waveterm.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.waybar.enable"></a><a class="term" href="options.xhtml#opt-programs.waybar.enable"><code class="option">programs.waybar.enable</code>
   </a>
  </span>
@@ -64505,6 +65216,96 @@ attribute set of (boolean or floating point number or signed integer or absolute
 <tr><td>
 <code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/waylogout.nix" target="_top">
 &lt;home-manager/modules/programs/waylogout.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.wayprompt.enable"></a><a class="term" href="options.xhtml#opt-programs.wayprompt.enable"><code class="option">programs.wayprompt.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Wayprompt, a password-prompter for Wayland.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/wayprompt.nix" target="_top">
+&lt;home-manager/modules/programs/wayprompt.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.wayprompt.package"></a><a class="term" href="options.xhtml#opt-programs.wayprompt.package"><code class="option">programs.wayprompt.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The wayprompt package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.wayprompt</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/wayprompt.nix" target="_top">
+&lt;home-manager/modules/programs/wayprompt.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.wayprompt.settings"></a><a class="term" href="options.xhtml#opt-programs.wayprompt.settings"><code class="option">programs.wayprompt.settings</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Configuration for wayprompt written to
+<code class="filename">$XDG_CONFIG_HOME/wayprompt/config.ini</code>.
+See <span class="citerefentry"><span class="refentrytitle">wayprompt</span>(5)</span> for a list of available options.
+Note that colours can be either 6-hex-digit RGB or 8-hex-digit RGBA values.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  general = {
+    font-regular = &quot;sans:size=14&quot;;
+    pin-square-amount = 32;
+  };
+  colours = {
+    background = &quot;0xffffffaa&quot;;
+  };
+}
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/wayprompt.nix" target="_top">
+&lt;home-manager/modules/programs/wayprompt.nix&gt;
 </a></code>
 </td></tr>
 </table>
@@ -70825,12 +71626,89 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-services.autorandr.package"></a><a class="term" href="options.xhtml#opt-services.autorandr.package"><code class="option">services.autorandr.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The autorandr package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.autorandr</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/autorandr.nix" target="_top">
+&lt;home-manager/modules/services/autorandr.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.autorandr.extraOptions"></a><a class="term" href="options.xhtml#opt-services.autorandr.extraOptions"><code class="option">services.autorandr.extraOptions</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Extra options to pass to Autorandr.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;--force&quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/autorandr.nix" target="_top">
+&lt;home-manager/modules/services/autorandr.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-services.autorandr.ignoreLid"></a><a class="term" href="options.xhtml#opt-services.autorandr.ignoreLid"><code class="option">services.autorandr.ignoreLid</code>
   </a>
  </span>
 </dt>
 <dd>
 <p>Treat outputs as connected even if their lids are closed.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/autorandr.nix" target="_top">
+&lt;home-manager/modules/services/autorandr.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.autorandr.matchEdid"></a><a class="term" href="options.xhtml#opt-services.autorandr.matchEdid"><code class="option">services.autorandr.matchEdid</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Match displays based on edid instead of name.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -79658,15 +80536,15 @@ attribute set of (INI atom (null, bool, int, float or string))</p>
   {
     actions = &quot;true&quot;;
     anchor = &quot;top-right&quot;;
-    backgroundColor = &quot;#000000&quot;;
-    borderColor = &quot;#FFFFFF&quot;;
-    borderRadius = &quot;0&quot;;
-    defaultTimeout = &quot;0&quot;;
+    background-color = &quot;#000000&quot;;
+    border-color = &quot;#FFFFFF&quot;;
+    border-radius = &quot;0&quot;;
+    default-timeout = &quot;0&quot;;
     font = &quot;monospace 10&quot;;
     height = &quot;100&quot;;
     width = &quot;300&quot;;
     icons = &quot;true&quot;;
-    ignoreTimeout = &quot;false&quot;;
+    ignore-timeout = &quot;false&quot;;
     layer = &quot;top&quot;;
     margin = &quot;10&quot;;
     markup = &quot;true&quot;;
