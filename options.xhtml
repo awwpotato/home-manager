@@ -17837,7 +17837,7 @@ strings concatenated with “\n”</p>
 <p>Environment variables that will be set for the Bash session.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-attribute set</p>
+lazy attribute set of (string or signed integer or absolute path)</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">{ }</code></p>
@@ -47850,7 +47850,7 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>How often cleanup is performed.</p><p>The format is described in <a class="link" href="https://www.freedesktop.org/software/systemd/man/systemd.time.html" target="_top"><span class="citerefentry"><span class="refentrytitle">systemd.time</span>(7)</span></a>.</p>
+<p>How often cleanup is performed.</p><p>On linux the format is described in <a class="link" href="https://www.freedesktop.org/software/systemd/man/systemd.time.html" target="_top"><span class="citerefentry"><span class="refentrytitle">systemd.time</span>(7)</span></a>.</p><p>On Darwin it must be one of: hourly, daily, weekly, monthly, semiannually, annually, which are implemented as defined in <a class="link" href="https://www.freedesktop.org/software/systemd/man/systemd.time.html" target="_top"><span class="citerefentry"><span class="refentrytitle">systemd.time</span>(7)</span></a>.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 (optionally newline-terminated) single-line string</p>
@@ -54422,6 +54422,159 @@ positive integer, meaning &gt;0</p>
 <tr><td>
 <code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/qcal.nix" target="_top">
 &lt;home-manager/modules/programs/qcal.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.quickshell.enable"></a><a class="term" href="options.xhtml#opt-programs.quickshell.enable"><code class="option">programs.quickshell.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable quickshell, a flexbile QtQuick-based desktop shell toolkit…</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/quickshell.nix" target="_top">
+&lt;home-manager/modules/programs/quickshell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.quickshell.package"></a><a class="term" href="options.xhtml#opt-programs.quickshell.package"><code class="option">programs.quickshell.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The quickshell package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.quickshell</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/quickshell.nix" target="_top">
+&lt;home-manager/modules/programs/quickshell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.quickshell.activeConfig"></a><a class="term" href="options.xhtml#opt-programs.quickshell.activeConfig"><code class="option">programs.quickshell.activeConfig</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The name of the config to use.</p><p>If <code class="literal">null</code>, quickshell will attempt to use a config located in <code class="literal">$XDG_CONFIG_HOME/quickshell</code> instead of one of the named sub-directories.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/quickshell.nix" target="_top">
+&lt;home-manager/modules/programs/quickshell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.quickshell.configs"></a><a class="term" href="options.xhtml#opt-programs.quickshell.configs"><code class="option">programs.quickshell.configs</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>A set of configs to include in the quickshell config directory. The key is the name of the config.</p><p>The configuration that quickshell should use can be specified with the <code class="literal">activeConfig</code> option.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of absolute path</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/quickshell.nix" target="_top">
+&lt;home-manager/modules/programs/quickshell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.quickshell.systemd.enable"></a><a class="term" href="options.xhtml#opt-programs.quickshell.systemd.enable"><code class="option">programs.quickshell.systemd.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable quickshell systemd service.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/quickshell.nix" target="_top">
+&lt;home-manager/modules/programs/quickshell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.quickshell.systemd.target"></a><a class="term" href="options.xhtml#opt-programs.quickshell.systemd.target"><code class="option">programs.quickshell.systemd.target</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The systemd target that will automatically start quickshell.</p><p>If you set this to a WM-specific target, make sure that systemd integration for that WM is enabled (e.g. <code class="literal">wayland.windowManager.hyprland.systemd.enable</code>). <span class="strong"><strong>This is typically true by default</strong></span>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">config.wayland.systemd.target</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">&quot;hyprland-session.target&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/quickshell.nix" target="_top">
+&lt;home-manager/modules/programs/quickshell.nix&gt;
 </a></code>
 </td></tr>
 </table>
@@ -85937,29 +86090,25 @@ attribute set of (INI atom (null, bool, int, float or string) or attribute set o
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">{ }</code></p>
 
-<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">&#x27;&#x27;
-  {
-    actions = true;
-    anchor = &quot;top-right&quot;;
-    background-color = &quot;#000000&quot;;
-    border-color = &quot;#FFFFFF&quot;;
-    border-radius = 0;
-    default-timeout = 0;
-    font = &quot;monospace 10&quot;;
-    height = 100;
-    width = 300;
-    icons = true;
-    ignore-timeout = false;
-    layer = &quot;top&quot;;
-    margin = 10;
-    markup = true;
-  
-    # Section example
-    &quot;actionable=true&quot; = {
-      anchor = &quot;top-left&quot;;
-    };
-  }
-&#x27;&#x27;
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  &quot;actionable=true&quot; = {
+    anchor = &quot;top-left&quot;;
+  };
+  actions = true;
+  anchor = &quot;top-right&quot;;
+  background-color = &quot;#000000&quot;;
+  border-color = &quot;#FFFFFF&quot;;
+  border-radius = 0;
+  default-timeout = 0;
+  font = &quot;monospace 10&quot;;
+  height = 100;
+  icons = true;
+  ignore-timeout = false;
+  layer = &quot;top&quot;;
+  margin = 10;
+  markup = true;
+  width = 300;
+}
 </code></pre>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
@@ -91157,6 +91306,30 @@ TOML value</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/podman-linux" target="_top">
+&lt;home-manager/modules/services/podman-linux&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.podman.settings.mounts"></a><a class="term" href="options.xhtml#opt-services.podman.settings.mounts"><code class="option">services.podman.settings.mounts</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>mounts.conf configuration</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -107509,6 +107682,38 @@ boolean</p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/i3-sway/sway.nix" target="_top">
+&lt;home-manager/modules/services/window-managers/i3-sway/sway.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-wayland.windowManager.sway.systemd.dbusImplementation"></a><a class="term" href="options.xhtml#opt-wayland.windowManager.sway.systemd.dbusImplementation"><code class="option">wayland.windowManager.sway.systemd.dbusImplementation</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The D-Bus implementation used on the system.
+This affects which tool is used to import environment variables when starting the Sway session.
+On NixOS, this should match the value of the option <a class="link" href="https://nixos.org/manual/nixos/stable/options#opt-services.dbus.implementation"  target="_top"><code class="literal">services.dbus.implementation</code> (NixOS)</a>.
+When set to <code class="literal">dbus</code>, <code class="literal">dbus-update-activation-environment --systemd &lt;variables&gt;</code> is run.
+Otherwise, when set to <code class="literal">broker</code>, <code class="literal">systemctl --user import-environment &lt;variables&gt;</code> is run.
+See <a class="link" href="https://github.com/swaywm/sway/wiki#systemd-and-dbus-activation-environments"  target="_top">https://github.com/swaywm/sway/wiki#systemd-and-dbus-activation-environments</a> for more documentation.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “dbus”, “broker”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;dbus&quot;</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">&quot;broker&quot;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
